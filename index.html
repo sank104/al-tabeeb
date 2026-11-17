@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Clinical Compass</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside id="sb">
+  <div class="brand">🧭 <b>The Clinical Compass</b><small>Physician’s Reference · Egypt &amp; MENA</small></div>
+  <input id="q" type="search" placeholder="Search diseases / cases…" autocomplete="off">
+  <nav><button class="pb" data-p="1" style="--c:#c0392b"><i>1</i><span>Epidemiology: Age &amp; Sex Clues</span><em>6</em></button><button class="pb" data-p="2" style="--c:#d35400"><i>2</i><span>Symptoms &amp; Red Flags</span><em>14</em></button><button class="pb" data-p="3" style="--c:#b7791f"><i>3</i><span>Internal Medicine</span><em>31</em></button><button class="pb" data-p="4" style="--c:#7a8b00"><i>4</i><span>Cardiology</span><em>30</em></button><button class="pb" data-p="5" style="--c:#2f8f3a"><i>5</i><span>Chest / Pulmonology</span><em>31</em></button><button class="pb" data-p="6" style="--c:#00897b"><i>6</i><span>Pediatrics</span><em>30</em></button><button class="pb" data-p="7" style="--c:#0097a7"><i>7</i><span>ENT</span><em>30</em></button><button class="pb" data-p="8" style="--c:#1e6fd9"><i>8</i><span>Obstetrics &amp; Gynecology</span><em>30</em></button><button class="pb" data-p="9" style="--c:#3949ab"><i>9</i><span>General Surgery</span><em>31</em></button><button class="pb" data-p="10" style="--c:#6a3fb5"><i>10</i><span>Neurology &amp; Psychiatry</span><em>30</em></button><button class="pb" data-p="11" style="--c:#a23fb5"><i>11</i><span>Dermatology</span><em>30</em></button><button class="pb" data-p="12" style="--c:#c2185b"><i>12</i><span>Ophthalmology</span><em>30</em></button><button class="pb" data-p="13" style="--c:#6d4c41"><i>13</i><span>Orthopedics</span><em>32</em></button><button class="pb" data-p="14" style="--c:#546e7a"><i>14</i><span>Urology</span><em>20</em></button><button class="pb" data-p="15" style="--c:#00695c"><i>15</i><span>Lab &amp; Drug Interactions</span><em>16</em></button><button class="pb" data-p="16" style="--c:#b71c1c"><i>16</i><span>ER &amp; Resuscitation</span><em>5</em></button></nav>
+</aside>
+<main>
+  <button id="menu" aria-label="Menu">☰</button>
+  <section class="view" id="home">
+    <h1>The Clinical Compass</h1>
+    <p class="lead">16 parts, 396 cases and modules. Pick a part, choose what to read, and use <b>G</b> to search any case on Google.</p>
+    <div class="tiles"><button class="tile" data-p="1" style="--c:#c0392b"><i>1</i><span>Epidemiology: Age &amp; Sex Clues</span></button><button class="tile" data-p="2" style="--c:#d35400"><i>2</i><span>Symptoms &amp; Red Flags</span></button><button class="tile" data-p="3" style="--c:#b7791f"><i>3</i><span>Internal Medicine</span></button><button class="tile" data-p="4" style="--c:#7a8b00"><i>4</i><span>Cardiology</span></button><button class="tile" data-p="5" style="--c:#2f8f3a"><i>5</i><span>Chest / Pulmonology</span></button><button class="tile" data-p="6" style="--c:#00897b"><i>6</i><span>Pediatrics</span></button><button class="tile" data-p="7" style="--c:#0097a7"><i>7</i><span>ENT</span></button><button class="tile" data-p="8" style="--c:#1e6fd9"><i>8</i><span>Obstetrics &amp; Gynecology</span></button><button class="tile" data-p="9" style="--c:#3949ab"><i>9</i><span>General Surgery</span></button><button class="tile" data-p="10" style="--c:#6a3fb5"><i>10</i><span>Neurology &amp; Psychiatry</span></button><button class="tile" data-p="11" style="--c:#a23fb5"><i>11</i><span>Dermatology</span></button><button class="tile" data-p="12" style="--c:#c2185b"><i>12</i><span>Ophthalmology</span></button><button class="tile" data-p="13" style="--c:#6d4c41"><i>13</i><span>Orthopedics</span></button><button class="tile" data-p="14" style="--c:#546e7a"><i>14</i><span>Urology</span></button><button class="tile" data-p="15" style="--c:#00695c"><i>15</i><span>Lab &amp; Drug Interactions</span></button><button class="tile" data-p="16" style="--c:#b71c1c"><i>16</i><span>ER &amp; Resuscitation</span></button></div>
+    <div class="legend"><mark class="hl dx">Diagnosis</mark><mark class="hl rx">Treatment / Drug</mark><mark class="hl red">Red Flag</mark><mark class="hl lab">Lab / Investigation</mark><mark class="hl mech">Mechanism</mark></div>
+  </section>
+  <section class="view" id="res" hidden><h1>Search results</h1><div class="grid" id="resg"></div></section>
+</main>
+<script src="js/data/index.js"></script>
+<script src="js/data/part-01.js"></script>
+<script src="js/data/part-02.js"></script>
+<script src="js/data/part-03.js"></script>
+<script src="js/data/part-04.js"></script>
+<script src="js/data/part-05.js"></script>
+<script src="js/data/part-06.js"></script>
+<script src="js/data/part-07.js"></script>
+<script src="js/data/part-08.js"></script>
+<script src="js/data/part-09.js"></script>
+<script src="js/data/part-10.js"></script>
+<script src="js/data/part-11.js"></script>
+<script src="js/data/part-12.js"></script>
+<script src="js/data/part-13.js"></script>
+<script src="js/data/part-14.js"></script>
+<script src="js/data/part-15.js"></script>
+<script src="js/data/part-16.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
